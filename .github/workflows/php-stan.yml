@@ -3,6 +3,9 @@ name: PHP Stan
 on:
   workflow_run:
     workflows: [ "Symfony" ]
+  push:
+    branches:
+      - 'feature/**'
   pull_request:
     branches:
       - 'feature/**'
